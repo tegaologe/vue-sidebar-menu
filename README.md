@@ -139,7 +139,7 @@ menu: [
     // props: componentProps
     // hidden: false
     // hiddenOnCollapse: true
-  }
+  },
 ]
 ```
 
@@ -237,28 +237,50 @@ props: {
 All styles customization can be done in normal CSS by using this classes
 
 ```css
-.v-sidebar-menu {}
-.v-sidebar-menu.vsm_expanded {}
-.v-sidebar-menu.vsm_collapsed {}
-.v-sidebar-menu.vsm_rtl {}
-.v-sidebar-menu .vsm--item {}
-.v-sidebar-menu .vsm--link {}
-.v-sidebar-menu .vsm--link_active {}
-.v-sidebar-menu .vsm--link_hover {}
-.v-sidebar-menu .vsm--link_open {}
-.v-sidebar-menu .vsm--link_mobile {}
-.v-sidebar-menu .vsm--link_level-[n] {}
-.v-sidebar-menu .vsm--link_disabled {}
-.v-sidebar-menu .vsm--title {}
-.v-sidebar-menu .vsm--icon {}
-.v-sidebar-menu .vsm--arrow {}
-.v-sidebar-menu .vsm--arrow_open {}
-.v-sidebar-menu .vsm--badge {}
-.v-sidebar-menu .vsm--badge_default {}
-.v-sidebar-menu .vsm--header {}
-.v-sidebar-menu .vsm--dropdown {}
-.v-sidebar-menu .vsm--mobile-bg {}
-.v-sidebar-menu .vsm--toggle-btn {}
+.v-sidebar-menu {
+}
+.v-sidebar-menu.vsm_expanded {
+}
+.v-sidebar-menu.vsm_collapsed {
+}
+.v-sidebar-menu.vsm_rtl {
+}
+.v-sidebar-menu .vsm--item {
+}
+.v-sidebar-menu .vsm--link {
+}
+.v-sidebar-menu .vsm--link_active {
+}
+.v-sidebar-menu .vsm--link_hover {
+}
+.v-sidebar-menu .vsm--link_open {
+}
+.v-sidebar-menu .vsm--link_mobile {
+}
+.v-sidebar-menu .vsm--link_level-[n] {
+}
+.v-sidebar-menu .vsm--link_disabled {
+}
+.v-sidebar-menu .vsm--title {
+}
+.v-sidebar-menu .vsm--icon {
+}
+.v-sidebar-menu .vsm--arrow {
+}
+.v-sidebar-menu .vsm--arrow_open {
+}
+.v-sidebar-menu .vsm--badge {
+}
+.v-sidebar-menu .vsm--badge_default {
+}
+.v-sidebar-menu .vsm--header {
+}
+.v-sidebar-menu .vsm--dropdown {
+}
+.v-sidebar-menu .vsm--mobile-bg {
+}
+.v-sidebar-menu .vsm--toggle-btn {
+}
 ```
 
 ## Theming
@@ -280,19 +302,19 @@ $primary-color: red;
   --vsm-primary-color: #4285f4;
   --vsm-base-bg: #2a2a2e;
   --vsm-item-color: #fff;
-  --vsm-item-active-color:;
-  --vsm-item-active-bg:;
+  --vsm-item-active-color: ;
+  --vsm-item-active-bg: ;
   --vsm-item-active-line-color: var(--vsm-primary-color);
   --vsm-item-open-color: #fff;
-  --vsm-item-hover-color:;
+  --vsm-item-hover-color: ;
   --vsm-item-open-bg: var(--vsm-primary-color);
   --vsm-item-hover-bg: rgba(30, 30, 33, 0.5);
   --vsm-icon-color: var(--vsm-item-color);
   --vsm-icon-bg: #1e1e21;
-  --vsm-icon-active-color:;
-  --vsm-icon-active-bg:;
-  --vsm-icon-open-color:;
-  --vsm-icon-open-bg:;
+  --vsm-icon-active-color: ;
+  --vsm-icon-active-bg: ;
+  --vsm-icon-open-color: ;
+  --vsm-icon-open-bg: ;
   --vsm-mobile-item-color: #fff;
   --vsm-mobile-item-bg: var(--vsm-primary-color);
   --vsm-mobile-icon-color: var(--vsm-mobile-item-color);
@@ -358,3 +380,6 @@ app.component('custom-link', customLink)
 ```
 
 Note: the `onRouteChange` function can be injected useful for updating the active state whenever the url change.
+
+LocalBuild
+npm run build:lib

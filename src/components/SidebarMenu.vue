@@ -7,6 +7,8 @@
     <div class="vsm--wrapper">
       <slot name="header" />
       <sidebar-menu-scroll>
+        <slot name="default" />
+        <!--
         <ul class="vsm--menu" :style="{ width: sidebarWidth }">
           <sidebar-menu-item
             v-for="item in computedMenu"
@@ -22,6 +24,7 @@
             </template>
           </sidebar-menu-item>
         </ul>
+        -->
       </sidebar-menu-scroll>
       <slot name="footer" />
     </div>
